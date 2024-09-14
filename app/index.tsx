@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View className="flex-1 items-center justify-center h-[100%] border">
       <Text className="text-3xl font-black">Hi man</Text>
-      <Link href="/Profile">G0 to profile</Link>
+      <Link href="/Home">home</Link>
     </View>
   );
 }
