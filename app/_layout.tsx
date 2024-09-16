@@ -29,7 +29,7 @@ const RootLayout = () => {
       <Stack.Screen
         name="index"
         options={{
-          headerShown: true,
+          headerShown: false,
         }}
       />
     </Stack>
