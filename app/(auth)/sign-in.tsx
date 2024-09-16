@@ -37,8 +37,8 @@ const SignIn = () => {
 
   return (
     <SafeAreaView className="bg-primary h-full">
-      <ScrollView>
-        <View className="w-full flex justify-center h-full px-4 my-6 flex-1">
+      <ScrollView contentContainerStyle={{ height: "100%" }}>
+        <View className="w-full flex justify-center items-center h-[100%] px-4 my-6 flex-1">
           <Image
             source={images.logo}
             className="w-[115px] h-[35px]"
@@ -62,12 +62,14 @@ const SignIn = () => {
             otherStyles="mt-7"
           />
 
-          <CustomButton
-            title="Sign In"
-            handlePress={submit}
-            containerStyles="mt-7"
-            isLoading={isSubmitting}
-          />
+          <View className="w-full">
+            <CustomButton
+              title="Sign In"
+              handlePress={submit}
+              containerStyles="mt-7"
+              isLoading={isSubmitting}
+            />
+          </View>
           <View className="justify-center pt-5 flex-row gap-2">
             <Text className="text-lg font-pregular text-gray-100 text-center mt-2">
               Don't have account?{" "}
